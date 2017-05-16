@@ -3,7 +3,7 @@ package ejercicio1;
 import java.util.List;
 
 public class P3_Ejercicio_1 {
-	//Prueba
+	//Ignorar
 	public static SoluciónEjercicio1 Ejercicio1(List<Punto> puntos){
 		SoluciónEjercicio1 respuesta = new SoluciónEjercicio1();
 		if(puntos.size() == 2){
