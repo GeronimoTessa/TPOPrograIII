@@ -5,6 +5,13 @@ import java.util.List;
 public class P3_Ejercicio_1 {
 	//Ignorar
 	public static SoluciónEjercicio1 Ejercicio1(List<Punto> puntos){
+		
+		Collections.sort(puntos, new Comparator<Punto>() {
+			public int compare(Punto p1, Punto p2) {
+				return Integer.compare(p1.getX(), p2.getX());
+		}
+		});
+		
 		SoluciónEjercicio1 respuesta = new SoluciónEjercicio1();
 		if(puntos.size() == 2){
 			respuesta.setPunto1(puntos.get(0));
