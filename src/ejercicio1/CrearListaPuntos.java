@@ -9,6 +9,7 @@ public class CrearListaPuntos {
 		List<Punto> puntos = new ArrayList<Punto>();
 		
 		//TODO Creamos los puntos
+		//Esto es una prueba para ver si esta subiendo
 		Punto punto1 = new Punto(0, 0);
 		Punto punto2 = new Punto(0, 1);
 		Punto punto3 = new Punto(1, 3);
