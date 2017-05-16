@@ -7,7 +7,7 @@ public class CrearListaPuntos {
 
 	public static List<Punto> crearPuntos(){
 		List<Punto> puntos = new ArrayList<Punto>();
-		
+		//Esto es una prueba
 		//TODO Creamos los 32 puntos		
 		Punto punto1 = new Punto(0, 0);
 		Punto punto2 = new Punto(0, 1);
