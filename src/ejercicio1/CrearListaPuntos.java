@@ -40,8 +40,7 @@ public class CrearListaPuntos {
 		Punto punto29 = new Punto(0, 3);
 		Punto punto30 = new Punto(87, 12);
 		Punto punto31 = new Punto(3, 31);
-		Punto punto32 = new Punto(4, 0);
-		Punto punto33 = new Punto(3,1);
+		Punto punto32 = new Punto(4, 0);		
 		
 		puntos.add(punto1);
 		puntos.add(punto2);
