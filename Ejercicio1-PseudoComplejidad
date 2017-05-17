@@ -1,0 +1,43 @@
+EJERCICIO 1
+
+ALGORITMO Ejercicio1
+ENTRADA
+Secuencia S de puntos, con al menos 2 puntos.
+Modulo: algoritmo que devuelve la distancia entre 2 puntos.
+SALIDA
+Tupla con los dos puntos de menor distancia entre si y la cantidad de instrucciones ejecutadas.
+PSEUDOCODIGO
+Res <- (punto1, punto2, instr: 0)		c1
+Si #S = 2					c2
+                   Res <- (punto1: S[1], punto2: S[2])		c3
+Sino
+                   S1 = S[1..#S/2]				c4
+     S2 = S[#S/2+1, #S2]				c5
+     Res1 <- Ejercicio1(S1)			n/2
+ 	     Res2 <- Ejercicio2(S2)			n/2
+                   Si Modulo(Res1) < Modulo(Res2)		c6
+                       Res <- Res1				c7
+    Sino
+  		Res <- Res2				c8
+   Fin si
+Fin si
+Devolver Res					c9
+
+CALCULO DE COMPLEJIDAD EJERCICIO 1
+
+Cte			n=2
+T(n) = 	2T(n/2)+Cdiv+Cun	n>2
+
+T0=2[T1(n/2)+Cdiv+Cun]+Cdiv+Cun => 2T1(n/2)+3Cdiv+3CUn
+=2[2T2(n/4)+3Cdiv+3Cun]+Cdiv+Cun => 4T2(n/4)+7Cdiv+7Cun
+=2[4T3(n/8)+7Cdiv+7Cun]+Cdiv+Cun => 8T3(n/8)+15Cdiv+15Cun
+
+En gral, 2kT(n/2k)+(2k+1-1)Cdiv+(2k+1-1)Cun
+
+Para nr=k, T(k)=2kT(2)+(2k+1-1)Cdiv+(2k+1-1)Cun entonces n/2k=2, n=2(2k), log2n=2log22k, log2n=2k, log2n/2=k
+
+=> O(n) = 2log2nCte+(2log2n+1-1)Cdiv+(2log2n+1-1)Cun
+=> O(n) = n Cte + n (2n-1)Cdiv + n(2n-1)Cun => O(n) = n2 CUADRATICO.
+
+
+
